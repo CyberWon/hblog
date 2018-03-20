@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客首页</title>
+</head>
+<style type="text/css">
+    a {text-decoration: none; color: #000000;}
+</style>
+<body>
+{% for blog in ret %}
+<p><h1><a href="view/{{ blog.name }}">{{ blog.title }}</a></h1> {{ blog.description }} <br>{{ blog.updatetime }}</p>
+{% endfor %}
+</body>
+</html>
